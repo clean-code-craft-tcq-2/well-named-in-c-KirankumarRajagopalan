@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <assert.h>
 #include "Display_Algorithm.h"
 #include "Color_Selection_Algorithm.h"
 
