@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "Display_Algorithm.h"
 #include "Color_Selection_Algorithm.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
