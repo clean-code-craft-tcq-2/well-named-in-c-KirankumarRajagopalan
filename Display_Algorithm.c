@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "Display_Algorithm.h"
-#include "Color_Selection_Algorithm.h"
 
 void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
