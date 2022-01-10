@@ -1,4 +1,4 @@
-#indef COLOR_SELECTION_ALGORITHM_H
+#ifndef COLOR_SELECTION_ALGORITHM_H
 #define COLOR_SELECTION_ALGORITHM_H
 
 const char* MajorColorNames[] = {
