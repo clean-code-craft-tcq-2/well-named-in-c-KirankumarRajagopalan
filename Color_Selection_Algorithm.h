@@ -14,6 +14,4 @@ int numberOfMajorColors =
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-const int MAX_COLORPAIR_NAME_CHARS = 16;
-
 #endif
