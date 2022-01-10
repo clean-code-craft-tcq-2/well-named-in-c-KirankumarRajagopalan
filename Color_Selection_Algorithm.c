@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "Color_Selection_Algorithm.h"
 
-const int MAX_COLORPAIR_NAME_CHARS = 16;
     
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
