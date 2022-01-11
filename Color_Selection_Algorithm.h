@@ -1,5 +1,5 @@
-#ifndef COLOR_SELECTION_ALGORITHM_H
-#define COLOR_SELECTION_ALGORITHM_H
+#ifndef COLOR_SELECTION_ALGORITHM_H_INCLUDED
+#define COLOR_SELECTION_ALGORITHM_H_INCLUDED
 
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
