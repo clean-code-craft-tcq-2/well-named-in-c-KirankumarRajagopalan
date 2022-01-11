@@ -1,7 +1,7 @@
 #include "Display_Algorithm.h"
 #include "Color_Selection_Algorithm.h"
 
-int main() {
+void main() {
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
 
