@@ -1,6 +1,8 @@
 #ifndef DISPLAY_ALGORITHM_H_INCLUDED
 #define DISPLAY_ALGORITHM_H_INCLUDED
 
+#include "Color_Selection_Algorithm.h"
+
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
