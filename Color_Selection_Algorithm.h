@@ -1,17 +1,25 @@
-#ifndef COLOR_SELECTION_ALGORITHM_H_INCLUDED
-#define COLOR_SELECTION_ALGORITHM_H_INCLUDED
+#include <stdio.h>
+#include <assert.h>
+#define MAJOR_AND_MINOR_COLORS (5u)
 
-const char* MajorColorNames[] = {
-    "White", "Red", "Black", "Yellow", "Violet"
-};
-const char* MinorColorNames[] = {
-    "Blue", "Orange", "Green", "Brown", "Slate"
-};
+enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
+enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
-int numberOfMajorColors =
-    sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+int numberOfMajorColors;
+int numberOfMinorColors;
 
-int numberOfMinorColors =
-    sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
+const int MAX_COLORPAIR_NAME_CHARS;
 
-#endif
+typedef struct {
+    enum MajorColor majorColor;
+    enum MinorColor minorColor;
+} ColorPair;
+
+//Method definitions
+
+ColorPair getColorFromPairNumber(int pairNumber);
+void colorPairToString(const ColorPair* colorPair, char* buffer);
+int getPairNumberFromColor(const ColorPair* colorPair);
+
+extern const char* majorColorNames[];
+extern const char* minorColorNames[];
