@@ -1,6 +1,13 @@
-#include <stdio.h>
-#include "Display_Algorithm.h"
 
+#include "Color_Selection_Algorithm.h"
+
+const int MAX_COLORPAIR_NAME_CHARS = 16;
+
+const char* majorColorNames[] = {"White", "Red", "Black", "Yellow", "Violet"};
+const char* minorColorNames[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+
+int numberOfMajorColors = sizeof(majorColorNames) / sizeof(majorColorNames[0]);
+int numberOfMinorColors = sizeof(minorColorNames) / sizeof(minorColorNames[0]);
     
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
@@ -8,7 +15,7 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer) {
         MinorColorNames[colorPair->minorColor]);
 }
 
-ColorPair GetColorFromPairNumber(int pairNumber) {
+ColorPair getColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
     colorPair.majorColor = 
@@ -18,7 +25,7 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
     return colorPair;
 }
 
-int GetPairNumberFromColor(const ColorPair* colorPair) {
+int getPairNumberFromColor(const ColorPair* colorPair) {
     return colorPair->majorColor * numberOfMinorColors +
             colorPair->minorColor + 1;
 }
